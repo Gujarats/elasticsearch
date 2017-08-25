@@ -26,3 +26,7 @@ fi
 # then assume that user wants to run his own process,
 # for example a `bash` shell to explore this image
 exec "$@"
+
+cd /usr/share/elasticsearch
+bin/plugin install analysis-phonetic
+bin/plugin install analysis-icu
